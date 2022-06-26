@@ -22,13 +22,16 @@ modules:
     buildsystem: autotools
     sources:
       - type: archive
-        url: https://downloads.sourceforge.net/project/lgames/ltris/ltris-1.2.4.tar.gz
-        sha256: d6eb7b301023278604d9292a92f2fd2f5103ee412a75a126d2550e2ec2368f83
+        url: https://downloads.sourceforge.net/project/lgames/ltris/ltris-1.2.5.tar.gz
+        sha256: 2ac6f94dd40c4c4cda25f8c756182adbb75216f67152735443a3a9014fb1c333
+        x-checker-data:
+          type: anitya
+          project-id: 21503
+          stable-only: true
+          url-template: https://downloads.sourceforge.net/project/lgames/ltris/ltris-$version.tar.gz
       - type: shell
         commands:
           - cp -p /usr/share/automake-*/config.{sub,guess} .
-      - type: file
-        path: ltris128.png
       - type: shell
         commands:
           - sed -i 's#<id>ltris</id>#<id>net.sourceforge.lgames.LTris</id>#' ltris.appdata.xml
