@@ -27,8 +27,8 @@ modules:
       - install -Dm644 ltris.appdata.xml ${FLATPAK_DEST}/share/appdata/ltris.appdata.xml
     sources:
       - type: archive
-        url: https://downloads.sourceforge.net/project/lgames/ltris/ltris-1.2.7.tar.gz
-        sha256: 1291c6a642d06b9ee153ac0a2e7855a2c983e839c618f1a294df04d829525cb0
+        url: https://downloads.sourceforge.net/project/lgames/ltris/ltris-1.2.8.tar.gz
+        sha256: d9ee6169a536a6a90193cdaa885ff71d08120553c73f4f54c16f9342aa4652a0
         x-checker-data:
           type: anitya
           project-id: 21503
