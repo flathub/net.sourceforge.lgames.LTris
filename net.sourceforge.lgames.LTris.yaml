@@ -42,3 +42,5 @@ modules:
           - sed -i 's#<id>ltris</id>#<id>net.sourceforge.lgames.LTris</id>#' ltris.appdata.xml
       - type: file
         path: ltris128.png
+      - type: patch
+        path: appstream.patch
