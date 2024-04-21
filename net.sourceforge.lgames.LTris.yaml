@@ -1,6 +1,6 @@
 app-id: net.sourceforge.lgames.LTris
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 rename-desktop-file: ltris.desktop
 rename-appdata-file: ltris.appdata.xml
@@ -23,12 +23,12 @@ modules:
     post-install:
       - install -Dm644 ltris128.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/ltris.png
       - mkdir -p ${FLATPAK_DEST}/share/icons/hicolor/48x48/apps/
-      - mv ${FLATPAK_DEST}/share/icons/hicolor/apps/ltris.png ${FLATPAK_DEST}/share/icons/hicolor/48x48/apps/ltris.png
+      - mv ${FLATPAK_DEST}/share/icons/ltris.png ${FLATPAK_DEST}/share/icons/hicolor/48x48/apps/ltris.png
       - install -Dm644 ltris.appdata.xml ${FLATPAK_DEST}/share/appdata/ltris.appdata.xml
     sources:
       - type: archive
-        url: https://downloads.sourceforge.net/project/lgames/ltris/ltris-1.3.tar.gz
-        sha256: 377af29b327cf6dd124fed2f070a5dec0a78aee662790f992f3f1d3faddd9f90
+        url: https://downloads.sourceforge.net/project/lgames/ltris/ltris-1.3.1.tar.gz
+        sha256: 498706bf2bb73188f2cf419555dd892d9395f85b03280c24df2efed33e53642b
         x-checker-data:
           type: anitya
           project-id: 21503
@@ -42,5 +42,3 @@ modules:
           - sed -i 's#<id>ltris</id>#<id>net.sourceforge.lgames.LTris</id>#' ltris.appdata.xml
       - type: file
         path: ltris128.png
-      - type: patch
-        path: appstream.patch
