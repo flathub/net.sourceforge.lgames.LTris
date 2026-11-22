@@ -1,0 +1,23 @@
+From 896a3e64d17827fece56dbd63efd3b5ae64b2900 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Mon, 23 Nov 2026 02:00:03 +0300
+Subject: [PATCH] Fix appdata
+
+Remove the duplicated the launchable tag
+---
+ ltris.appdata.xml | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/ltris.appdata.xml b/ltris.appdata.xml
+index a5fd52e..b2acbef 100644
+--- a/ltris.appdata.xml
++++ b/ltris.appdata.xml
+@@ -60,5 +60,4 @@
+     <release version="1.0.14" date="2009-12-25"/>
+     <release version="1.0.13" date="2009-10-25"/>
+   </releases>
+-  <launchable type="desktop-id">ltris.desktop</launchable>
+ </component>
+--
+libgit2 1.9.7
+
